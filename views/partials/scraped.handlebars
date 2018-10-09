@@ -1,0 +1,17 @@
+{{!-- Card for each article scraped from the web --}}
+{{#each Article}}
+<div class=" col-lg-4 col-md-6 col-sm-12 mt-5 d-flex justify-content-center">
+    <div class="card profile-card" data-artId="{{this.id}}">
+        <a class="img-link" href="{{this.link}}" target="_blank">
+            <div class="card-img-block p-2">
+                <img class="card-img-top" src="{{this.imgURL}}" alt="Card image cap">
+            </div>
+        </a>
+        <div class="card-body pt-0">
+            <h5 class="card-title">{{this.title}}</h5>
+            {{!-- <p class="card-text">{{this.desc}}</p> --}}
+            <button class="btn btn-primary save-art-btn">Save Article</button>
+        </div>
+    </div>
+</div>
+{{/each}}

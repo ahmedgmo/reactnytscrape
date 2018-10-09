@@ -1,0 +1,24 @@
+<nav class="navbar navbar-expand-lg navbar-dark blue-br heading-font grey-br fixed-top">
+    <h2 class="pt-2 pt-2 text-white mr-2">Saved Articles</h2>
+    <button class="navbar-toggler" data-target="#navSaved" data-control="navigation" data-toggle="collapse">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navSaved">
+        <ul class="nav navbar-nav ml-auto">
+            <li class="nav-item active h4">
+                <a href="/" class="nav-link">Home</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+
+<div class="row justify-content-center mt-5">
+    <div class="col-sm-12 col-md-10">
+        <div class="row justify-content-center p-2 saved-div">
+            {{> saved}}
+        </div>
+        <div class="mt-2 p-3 text-center none-stored">
+            <h2 class="heading-font text-white mx-auto d-inline">None Saved!</h2>
+        </div>
+    </div>
+</div>
